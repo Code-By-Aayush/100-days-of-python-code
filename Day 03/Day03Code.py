@@ -121,3 +121,40 @@ if extra_cheese == "Y":
     bill += 1
     print("Cheese Will Cost you Extra Rs 1")
 print(f"Your final bill is: Rs{bill}.")
+
+
+# Logical Operator:
+
+# And (True and True --> True ; else False)
+# Or (True or False ---> True ; False or True ---> True ; True or True --> True : False or False --> False )
+# Not (Not True --> False ; Not False --> True)
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("What is your age? "))
+    if age < 12 :
+        bill = 5
+        print("Child tickets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    elif age >= 45 and age <= 55:
+        bill = 0
+        print("Free Ride on Us")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+
+    wants_photo = input("Do you want a photo taken? Y or N. ")
+    if wants_photo == "Y":
+        bill += 3
+
+    print(f"Your final bill is ${bill}")
+
+else:
+    print("Sorry, you have to grow taller before you can ride.")
+
